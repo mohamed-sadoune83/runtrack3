@@ -10,10 +10,6 @@
 <body>
 
         <script src="script.js"></script>
-        <script>
-                afficherjourssemaines();
-        </script>
-
 </body>
 
 </html>

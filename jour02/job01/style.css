@@ -1,0 +1,14 @@
+body {
+        background-color: black;
+        color: silver;
+        text-align: center;
+}
+
+button {
+        width: 8rem;
+        height: 2rem;
+        background-color: darkorange;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-top: 1rem;
+}

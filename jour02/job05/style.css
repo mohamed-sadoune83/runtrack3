@@ -1,0 +1,40 @@
+body {
+	background-color: black;
+	color: silver;
+	text-align: center;
+	border: 2px solid darkorange;
+	min-height: 4096px;
+	margin: 0;
+}
+
+button {
+	width: 8rem;
+	height: 2rem;
+	background-color: darkorange;
+	border-radius: 20px;
+	font-weight: bold;
+	margin: 1rem auto;
+}
+
+textarea {
+	background-color: darkorange;
+	color: white;
+	font-size: 1rem;
+	width: 20rem;
+	height: 10rem;
+	margin: 1rem auto;
+	border-radius: 20px;
+	padding: 0.4rem;
+	box-shadow: 4px 4px 4px rgb(87, 85, 85);
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: black;
+	font-size: 1.6rem;
+	font-weight: bold;
+	background-color: darkorange; 
+	transition: background-color 0.2s; 
+}

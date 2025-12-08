@@ -1,11 +1,11 @@
 const footer = document.querySelector('footer');
 
 window.addEventListener('scroll', () => {
-	const scrollTop = window.scrollY; 
+	const scrollTop = window.scrollY;
 	const docHeight = document.body.scrollHeight - window.innerHeight;
 	const scrollPercent = (scrollTop / docHeight) * 100;
 
-	footer.style.backgroundColor = `hsl(${scrollPercent * 1.2}, 100%, 50%)`;
+	footer.style.background = `linear-gradient(to right, green ${scrollPercent}%, red ${scrollPercent}%)`;
 });
 
 /*

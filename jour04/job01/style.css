@@ -1,0 +1,28 @@
+body {
+        background-color: black;
+        color: deeppink;
+        text-align: center;
+}
+
+button {
+        background-color: deeppink;
+        padding: .4rem;
+        width: 12rem;
+        border-radius: 20px;
+        margin: 2rem;
+        font-weight: bold;
+}
+
+button:hover {
+        color: white;
+}
+
+p {
+        border: 1px solid deeppink;
+        margin: 0 4rem;
+        padding: .2rem;
+        background-color: deeppink;
+        color: black;
+        font-weight: bold;
+        border-radius: 20px;
+}

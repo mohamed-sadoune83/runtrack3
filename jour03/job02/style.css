@@ -1,0 +1,53 @@
+body {
+	background-color: black;
+	color: palevioletred;
+	text-align: center;
+}
+
+.container1{
+	display: flex;
+	flex-wrap: wrap;
+	width: 54rem;
+	height: 10.5rem;
+	margin: 1rem auto;
+	padding: 0.2rem;
+	gap: 0.4rem;
+}
+
+.container2 {
+	display: grid;
+        grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	width: 25rem;
+	height: 20.5rem;
+	border: 1px solid palevioletred;
+	margin: 1rem auto;
+        background-color: palevioletred;
+}
+
+.container1 img,
+.container2 img {
+	width: 8rem;
+	height: 10rem;
+	cursor: grab;
+}
+
+#resultat {
+	font-size: 2rem;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.slot {
+        border: 1px solid palevioletred;
+        background-color: black;
+}
+
+button {
+        background-color: palevioletred;
+        width: 8rem;
+        padding: .4rem;
+        border-radius: 20px;
+        margin-top: 1rem;
+        font-weight: bold;
+}

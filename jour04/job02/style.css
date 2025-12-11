@@ -1,0 +1,12 @@
+body {
+	background-color: black;
+	color: deeppink;
+	text-align: center;
+}
+
+button {
+        background-color: deeppink;
+        padding: .2rem;
+        width: 8rem;
+        border-radius: 20px;
+}

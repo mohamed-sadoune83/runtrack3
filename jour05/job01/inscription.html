@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Inscription Tyradex</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header>
+                <h1>Créer un compte</h1>
+        </header>
+
+        <form id="signupForm">
+                <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                        <div id="err-nom" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                        <div id="err-prenom" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email">
+                        <div id="err-email" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" placeholder="Votre mot de passe">
+                        <div id="err-password" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                        <label for="adresse">Adresse</label>
+                        <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+                        <div id="err-adresse" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                        <label for="cp">Code postal</label>
+                        <input type="text" id="cp" name="cp" placeholder="Code postal">
+                        <div id="err-cp" class="error-message"></div>
+                </div>
+
+                <button type="submit" id="submitBtn" disabled>S’inscrire</button>
+                <div id="formMessage"></div>
+        </form>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

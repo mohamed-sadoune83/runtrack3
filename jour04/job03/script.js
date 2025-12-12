@@ -201,13 +201,12 @@ function buildRadar(p) {
 	});
 }
 
-// Build modal HTML
 function buildModalHtml(p) {
 	const img = p.sprites?.regular || 'https://via.placeholder.com/150?text=No+Img';
 	const nameFr = p.name?.fr || p.name?.en || '???';
 	const types = p.types?.map((t) => `<span class="type-badge" style="background:${TYPE_COLORS[t.name] || '#555'}">${t.name}</span>`).join(' ') || '<span style="opacity:0.6">—</span>';
 
-	const stats = p.stats
+	const stats = p.statsDo
 		? Object.entries(p.stats)
 				.map(
 					([k, v]) => `

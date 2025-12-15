@@ -12,10 +12,10 @@
         <button id="show">Afficher le texte</button>
 
 
-        <div id="texte" style="display:none;">
+        <div id="texte" class="hidden">
                 Les logiciels et les cathédrales, c'est un peu la même chose :
                 d'abord on les construit, ensuite on prie.
-                        <button id="hide">Cacher le texte</button>
+                <button id="hide">Cacher le texte</button>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

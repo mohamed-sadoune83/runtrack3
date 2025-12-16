@@ -4,7 +4,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Job01</title>
+        <title>Job02</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
@@ -16,7 +16,10 @@
                                 <a class="nav-link disabled" aria-disabled="true">LPTF</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active text-white" aria-current="page" href="https://laplateforme.io" target="_blank">
+                                        Accueil
+                                </a>
+
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link text-white" href="#">Units</a>
@@ -35,7 +38,7 @@
 
                 <section class="d-flex flex-row justify-content-center gap-2 mx-2 flex-wrap">
                         <div class="card text-cente" style="width: 18rem;">
-                                <img src="./img/Butterfly.webp" class="card-img-top" alt="...">
+                                <img src="../job01/img/Butterfly.webp" class="card-img-top" alt="...">
                                 <div class="card-body d-flex flex-column align-items-center justify-content-between">
                                         <h5 class="card-title">Un papillon</h5>
                                         <p class="card-text">Un papillon c'est un peu comme une chenille mais avec des ailes.</p>
@@ -43,17 +46,54 @@
                                         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#papillonModal">
                                                 Comander votre propre papillon
                                         </a>
+
                                 </div>
                         </div>
 
-                        <div class="card text-center" style="width: 20rem; height: 29.2rem;">
+                        <!-- Modal confirmation achat  -->
+                        <div class="modal fade" id="papillonModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title">Confirmation d'achat</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                        🦋 Votre achat de papillon a bien été validé !
+                                                </div>
+                                                <div class="modal-footer">
+                                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+                                                                Fermer
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+                        <div id="card-world" class="card text-center z-1" style="width: 20rem; height: 29.2rem;">
                                 <div class="card-body d-flex flex-column align-items-center justify-content-between">
-                                        <h4 class="card-title">Bonjour, monde!</h4>
-                                        <h6 class="card-subtitle mb-2 text-body-primary fs-6">Il existe plusieurs version du terme:</h6>
-                                        <p class="card-text text-body-secondary">Le monde est la matière, l'espace et les phénomènes qui nous sont accessibles par les sens, l'expérience ou la raison.</p>
-                                        <p class="card-text text-body-secondary">Le sens le plus courant désigne notre planète, la Terre avec ses habitants et son environnement plus ou moins naturel.</p>
-                                        <p class="card-text text-body-secondary">Le sens étendu désigne l'univers dans son ensemble.</p>
-                                        <button type="button" class="btn btn-danger">Rebooter le Monde</button>
+                                        <h4 class="card-title" id="jumboTitle">Bonjour, monde!</h4>
+
+                                        <h6 class="card-subtitle mb-2 text-body-primary fs-6" id="jumboSubtitle">
+                                                Il existe plusieurs version du terme:
+                                        </h6>
+
+                                        <p class="card-text text-body-secondary" id="jumboText1">
+                                                Le monde est la matière, l'espace et les phénomènes qui nous sont accessibles...
+                                        </p>
+
+                                        <p class="card-text text-body-secondary" id="jumboText2">
+                                                Le sens le plus courant désigne notre planète...
+                                        </p>
+
+                                        <p class="card-text text-body-secondary" id="jumboText3">
+                                                Le sens étendu désigne l'univers dans son ensemble.
+                                        </p>
+
+                                        <button id="rebootBtn" type="button" class="btn btn-danger z-3 mt-2">
+                                                Rebooter le Monde
+                                        </button>
                                 </div>
                         </div>
 
@@ -71,10 +111,25 @@
                         </div>
                 </section>
 
+                <nav class="d-flex justify-content-center my-4">
+                        <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#" data-text="Bienvenue dans les Limbes">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#" data-text="Ici commence la Luxure">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#" data-text="Attention à Internet Explorer">3</a></li>
+                        </ul>
+                </nav>
+
                 <section>
-                        <div class="progress m-4 d-flex flex-column" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 90%">Installation de AI 9000 - 90%</div>
+                        <div class="d-flex align-items-center m-4">
+                                <button id="decreaseBtn" class="btn btn-secondary me-2 bg-danger">-</button>
+
+                                <div class="progress flex-grow-1" role="progressbar" aria-label="Progress">
+                                        <div id="progressBar" class="progress-bar" style="width: 90%">Installation de AI 9000 - 90%</div>
+                                </div>
+
+                                <button id="increaseBtn" class="btn btn-secondary ms-2 bg-success">+</button>
                         </div>
+
 
                         <form action="" class="w-100 d-flex flex-row justify-content-around">
                                 <div class="border p-2">
@@ -107,7 +162,7 @@
                                         <div class="input-group mb-3 d-flex flex-column">
                                                 <label for="Email address" class="form-label">Email address</label>
                                                 <div class="d-flex flex-column">
-                                                        <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="basic-addon1">
+                                                        <input id="emailInput" type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="basic-addon1">
                                                         <span>We'll never share your email with anyone else.</span>
                                                 </div>
                                         </div>
@@ -115,7 +170,7 @@
                                         <div class="input-group mb-3 d-flex flex-column">
                                                 <label for="Password" class="form-label">Password</label>
                                                 <div class="d-flex flex-row">
-                                                        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                                        <input id="passwordInput" type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                                                 </div>
                                         </div>
 
@@ -130,15 +185,37 @@
 
                         </form>
                         <div class="d-flex justify-content-center mx-4">
-                                <button type="button" class="btn btn-primary my-2  w-100 mx-auto">Submit</button>
+                                <button id="submitBtn" type="button" class="btn btn-primary my-2  w-100 mx-auto">Submit</button>
                         </div>
                 </section>
+
+                <!-- Modal récap formulaire -->
+                <div class="modal fade" id="formSummaryModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                                <h5 class="modal-title">Récapitulatif du formulaire</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body" id="formSummaryContent">
+                                        </div>
+                                        <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                                        Fermer
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
 
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -18,7 +18,7 @@
                                                 <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=white" alt="Logo" class="h-8 w-auto" />
                                         </div>
                                         <!-- Menu Desktop -->
-                                        <div class="hidden sm:flex space-x-4">
+                                        <div class="sm:flex space-x-4">
                                                 <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/5 hover:text-white">Accueil</a>
                                                 <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/5 hover:text-white">Inscription</a>
                                                 <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/5 hover:text-white">Connexion</a>
@@ -34,15 +34,39 @@
                         <form>
                                 <!-- Civilité -->
                                 <fieldset class="mb-6">
-                                        <legend class="text-lg font-semibold text-gray-900 mb-2">Civilité</legend>
-                                        <div class="flex gap-6">
-                                                <div class="flex items-center">
-                                                        <input id="civilite-masculin" type="radio" name="civilite" checked class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
-                                                        <label for="civilite-masculin" class="ml-2 text-gray-900">Masculin</label>
+                                        <div class="flex w-100 gap-1">
+                                                <div>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.0002 2.19971C9.34923 2.19971 7.2002 4.34874 7.2002 6.99971C7.2002 9.65067 9.34923 11.7997 12.0002 11.7997C14.6512 11.7997 16.8002 9.65067 16.8002 6.99971C16.8002 4.34874 14.6512 2.19971 12.0002 2.19971Z" fill="black" class="my-path"></path>
+                                                                <path d="M12.0002 13.2002C8.91293 13.2002 6.16345 14.6119 4.58538 16.7954L4.53634 16.8632C4.20405 17.3222 3.85043 17.8107 3.69295 18.3393C3.50047 18.9854 3.6101 19.6028 3.95342 20.2745C4.13479 20.6294 4.36506 20.931 4.66555 21.1683C4.96579 21.4054 5.29984 21.5496 5.64923 21.639C6.28077 21.8006 7.06271 21.8004 7.91295 21.8002H16.0874C16.9376 21.8004 17.7196 21.8006 18.3511 21.639C18.7005 21.5496 19.0346 21.4054 19.3348 21.1683C19.6353 20.931 19.8656 20.6294 20.0469 20.2745C20.3902 19.6028 20.4999 18.9854 20.3074 18.3393C20.1499 17.8107 19.7963 17.3222 19.464 16.8632L19.415 16.7954C17.8369 14.6119 15.0874 13.2002 12.0002 13.2002Z" fill="black" class="my-path"></path>
+                                                        </svg>
                                                 </div>
-                                                <div class="flex items-center">
+                                                <div>
+                                                        <legend class="text-lg font-semibold text-gray-900 mb-2">Civilité:</legend>
+                                                </div>
+
+                                        </div>
+                                        <div class="flex gap-6">
+                                                <div class="flex items-center gap-1">
+                                                        <input id="civilite-masculin" type="radio" name="civilite" checked class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_2051_13274)">
+                                                                        <path d="M10.9992 4.20061C6.13911 4.20061 2.19922 8.14051 2.19922 13.0006C2.19922 17.8607 6.13911 21.8006 10.9992 21.8006C15.8593 21.8006 19.7992 17.8607 19.7992 13.0006C19.7992 10.6039 18.8411 8.43102 17.287 6.84402L19.1982 4.93283V6.00081C19.1982 6.44263 19.5564 6.80081 19.9982 6.80081C20.44 6.80081 20.7982 6.44263 20.7982 6.00081V3.03331C20.8069 2.81788 20.729 2.5996 20.5645 2.43512C20.4083 2.2789 20.2036 2.2008 19.9988 2.20081C19.9986 2.20081 19.999 2.20081 19.9988 2.20081L16.9982 2.20081C16.5564 2.20081 16.1982 2.55898 16.1982 3.00081C16.1982 3.44263 16.5564 3.80081 16.9982 3.80081L18.0675 3.80081L16.0646 5.80373C14.6323 4.79378 12.885 4.20061 10.9992 4.20061Z" fill="black" class="my-path"></path>
+                                                                </g>
+                                                                <defs>
+                                                                        <clipPath id="clip0_2051_13274">
+                                                                                <rect width="24" height="24" fill="white"></rect>
+                                                                        </clipPath>
+                                                                </defs>
+                                                        </svg>
+                                                        <label for="civilite-masculin" class="text-gray-900">Masculin</label>
+                                                </div>
+                                                <div class="flex items-center gap-1">
                                                         <input id="civilite-feminin" type="radio" name="civilite" class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
-                                                        <label for="civilite-feminin" class="ml-2 text-gray-900">Féminin</label>
+                                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.0031 2.19995C7.6953 2.19995 4.20312 5.69213 4.20312 9.99995C4.20312 14.0377 7.27113 17.3588 11.2031 17.7594V18.7H10.0031C9.5613 18.7 9.20312 19.0581 9.20312 19.5C9.20312 19.9418 9.5613 20.3 10.0031 20.3H11.2031V20.9999C11.2031 21.4418 11.5613 21.7999 12.0031 21.7999C12.445 21.7999 12.8031 21.4418 12.8031 20.9999V20.3H14.0031C14.445 20.3 14.8031 19.9418 14.8031 19.5C14.8031 19.0581 14.445 18.7 14.0031 18.7H12.8031V17.7594C16.7351 17.3588 19.8031 14.0377 19.8031 9.99995C19.8031 5.69213 16.3109 2.19995 12.0031 2.19995Z" fill="black" class="my-path"></path>
+                                                        </svg>
+                                                        <label for="civilite-feminin" class="text-gray-900">Féminin</label>
                                                 </div>
                                         </div>
                                 </fieldset>
@@ -73,7 +97,23 @@
 
                                 <!-- Loisirs -->
                                 <fieldset class="mb-6">
-                                        <legend class="text-lg font-semibold text-gray-900 mb-2">Loisirs</legend>
+                                        <div class="flex gap-1">
+                                                <div>
+                                                        <svg width="20" height="20" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11.194 2.23215C9.45836 2.37258 7.8506 2.96521 6.48861 3.89211C6.4979 3.90534 6.50684 3.91894 6.51543 3.9329C7.44114 5.43717 8.56779 8.40489 8.56626 12.0029C9.38106 12.0952 10.259 12.1511 11.194 12.1567V2.23215Z" fill="black" class="my-path"></path>
+                                                                <path d="M5.2336 4.90625C3.76753 6.30426 2.73425 8.15223 2.35507 10.2287C2.44678 10.2437 2.53741 10.2751 2.62283 10.3239C3.47137 10.8088 4.96042 11.3875 6.96369 11.7632C6.92034 8.72068 6.00011 6.21732 5.2336 4.90625Z" fill="black" class="my-path"></path>
+                                                                <path d="M2.19571 11.9105C2.19545 11.9402 2.19531 11.97 2.19531 11.9999C2.19531 14.7877 3.35941 17.3037 5.22805 19.0882C6.24325 17.1274 6.74021 15.1853 6.90292 13.3785C4.8619 13.0176 3.25787 12.4506 2.19571 11.9105Z" fill="black" class="my-path"></path>
+                                                                <path d="M6.49028 20.1087C7.85197 21.035 9.45915 21.6272 11.194 21.7676V13.7567C10.2385 13.7513 9.33551 13.6964 8.49046 13.6044C8.29794 15.6369 7.7201 17.8182 6.5475 20.0168C6.53026 20.0491 6.51111 20.0798 6.49028 20.1087Z" fill="black" class="my-path"></path>
+                                                                <path d="M12.794 21.7678C14.542 21.6268 16.1604 21.0271 17.5289 20.0892C17.5082 20.0605 17.4893 20.0301 17.4722 19.998C16.2728 17.7493 15.6906 15.5215 15.5049 13.4534C14.5671 13.5889 13.6623 13.6751 12.794 13.7197V21.7678Z" fill="black" class="my-path"></path>
+                                                                <path d="M18.7885 19.0634C20.642 17.2804 21.7953 14.7748 21.7953 11.9999C21.7953 11.9607 21.7951 11.9216 21.7946 11.8826C20.1611 12.4623 18.5882 12.886 17.089 13.1824C17.2404 15.0349 17.7402 17.0374 18.7885 19.0634Z" fill="black" class="my-path"></path>
+                                                                <path d="M21.6394 10.2497C21.2627 8.16135 20.2247 6.30307 18.75 4.89957C18.0001 6.17505 17.1084 8.59881 17.0414 11.5597C18.4619 11.2657 19.955 10.8502 21.5089 10.2851C21.552 10.2694 21.5957 10.2577 21.6394 10.2497Z" fill="black" class="my-path"></path>
+                                                                <path d="M17.4957 3.88778C16.1343 2.9629 14.5279 2.37177 12.794 2.23193V12.1176C13.6375 12.0717 14.5196 11.9841 15.4366 11.8464C15.4524 8.32589 16.5434 5.42983 17.4577 3.94408C17.4697 3.92461 17.4823 3.90584 17.4957 3.88778Z" fill="black" class="my-path"></path>
+                                                        </svg>
+                                                </div>
+                                                <div>
+                                                        <legend class="text-lg font-semibold text-gray-900 mb-2">Loisirs</legend>
+                                                </div>
+                                        </div>
                                         <div class="flex flex-wrap gap-6">
                                                 <div class="flex items-center">
                                                         <input id="loisir-informatique" type="checkbox" name="loisir-informatique" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">

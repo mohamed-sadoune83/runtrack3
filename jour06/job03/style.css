@@ -1,0 +1,48 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 10px;
+	height: 10rem;
+}
+
+.c1 {
+	background-color: lightcoral;
+	grid-row: span 3;
+}
+
+.c2 {
+	background-color: lightcoral;
+	grid-row: span 3;
+}
+.c3 {
+	background-color: lightcoral;
+	grid-row: span 3;
+}
+
+/* style visuel */
+.cell {
+	border: 1px solid #000;
+	padding: 20px;
+}
+
+/* MOBILE : fusion verticale */
+@media (min-width: 767px) {
+	.c1 {
+		background-color: lightcoral;
+		grid-row: span 1;
+	}
+
+	.c2 {
+		background-color: lightcoral;
+		grid-row: span 1;
+                grid-row-start: 2;
+                grid-column-start: 2;
+	}
+	.c3 {
+		background-color: lightcoral;
+		grid-row: span 1;
+                grid-row-start: 3;
+                grid-column-start: 3;
+	}
+}

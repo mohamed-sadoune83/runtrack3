@@ -4,9 +4,11 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Job01</title>
-        <!-- Lien vers Materialize CSS -->
+        <title>Création de compte</title>
+        <!-- Materialize CSS -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         <header>
                 <nav class="blue darken-2">
                         <div class="nav-wrapper container">
-                                <a href="index.html" class="brand-logo">Job01</a>
+                                <a href="index.html" class="brand-logo">MonSite</a>
                                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                                         <li><a href="index.html">Accueil</a></li>
                                         <li><a href="index.html">Inscription</a></li>
@@ -26,10 +28,11 @@
                 </nav>
         </header>
 
-        <!-- SECTION FORMULAIRE -->
+        <!-- FORMULAIRE -->
         <main class="container">
                 <h2 class="center-align">Créer un compte</h2>
                 <form class="col s12 m8 offset-m2" action="#" method="post">
+
                         <!-- Civilité (radio) -->
                         <p>
                                 <label>
@@ -42,32 +45,42 @@
                                 </label>
                         </p>
 
-                        <!-- Prénom, Nom, Adresse -->
+                        <!-- Prénom -->
                         <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
                                 <input id="prenom" type="text" name="prenom" required>
                                 <label for="prenom">Prénom</label>
                         </div>
+
+                        <!-- Nom -->
                         <div class="input-field">
+                                <i class="material-icons prefix">account_circle</i>
                                 <input id="nom" type="text" name="nom" required>
                                 <label for="nom">Nom</label>
                         </div>
+
+                        <!-- Adresse -->
                         <div class="input-field">
+                                <i class="material-icons prefix">home</i>
                                 <input id="adresse" type="text" name="adresse" required>
                                 <label for="adresse">Adresse</label>
                         </div>
 
                         <!-- Email -->
                         <div class="input-field">
+                                <i class="material-icons prefix">email</i>
                                 <input id="email" type="email" name="email" required>
                                 <label for="email">Email</label>
                         </div>
 
                         <!-- Mot de passe -->
                         <div class="input-field">
+                                <i class="material-icons prefix">lock</i>
                                 <input id="password" type="password" name="password" required>
                                 <label for="password">Mot de passe</label>
                         </div>
                         <div class="input-field">
+                                <i class="material-icons prefix">lock</i>
                                 <input id="confirm-password" type="password" name="confirm_password" required>
                                 <label for="confirm-password">Confirmer le mot de passe</label>
                         </div>
@@ -95,33 +108,30 @@
 
                         <!-- Bouton -->
                         <div class="center-align">
-                                <button class="btn blue darken-2 waves-effect waves-light" type="submit">Valider</button>
+                                <button class="btn blue darken-2 waves-effect waves-light" type="submit">
+                                        Valider
+                                </button>
                         </div>
+
                 </form>
         </main>
 
         <!-- FOOTER -->
-        <footer class="page-footer blue darken-2 mt-5">
+        <footer class="page-footer blue darken-2">
                 <div class="container">
-                        <div class="row">
-                                <div class="col s12">
-                                        <ul class="center-align">
-                                                <li><a href="index.html" class="white-text">Accueil</a></li>
-                                                <li><a href="index.html" class="white-text">Inscription</a></li>
-                                                <li><a href="index.html" class="white-text">Connexion</a></li>
-                                                <li><a href="index.html" class="white-text">Rechercher</a></li>
-                                        </ul>
-                                </div>
-                        </div>
+                        <ul class="center-align">
+                                <li><a href="index.html" class="white-text">Accueil</a></li>
+                                <li><a href="index.html" class="white-text">Inscription</a></li>
+                                <li><a href="index.html" class="white-text">Connexion</a></li>
+                                <li><a href="index.html" class="white-text">Rechercher</a></li>
+                        </ul>
                 </div>
-                <div class="footer-copyright">
-                        <div class="container center-align">
-                                © 2025 Job01
-                        </div>
+                <div class="footer-copyrigth center-align">
+                        © 2025 MonSite
                 </div>
         </footer>
 
-        <!-- Script Materialize JS -->
+        <!-- Materialize JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>

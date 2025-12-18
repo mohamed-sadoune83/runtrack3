@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job05</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="min-h-screen bg-[linear-gradient(to_bottom,black_0%,black_45%,#262626_55%,#262626_100%)]">
+        <header>
+                <nav class="bg-black border-b border-neutral-700">
+                        <div class="max-w-screen-xl mx-auto p-4">
+
+                                <!-- TOP BAR -->
+                                <div class="flex items-center justify-between">
+
+                                        <!-- Logo (toujours visible) -->
+                                        <h1 class="text-white text-3xl font-bold">SLATE</h1>
+
+                                        <!-- Burger (mobile only) -->
+                                        <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden text-white p-2 rounded-lg hover:bg-neutral-800" aria-controls="mobile-menu" aria-expanded="false">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                                </svg>
+                                        </button>
+
+                                        <!-- Desktop menu -->
+                                        <div class="hidden md:flex md:items-center md:justify-between md:w-full md:ml-12">
+
+                                                <ul class="flex gap-6 text-white">
+                                                        <li><a href="#" class="hover:text-[#FF6C29]">Personnalisation</a></li>
+                                                        <li><a href="#" class="hover:text-[#FF6C29]">Maker</a></li>
+                                                        <li><a href="#" class="hover:text-[#FF6C29]">Charging</a></li>
+                                                        <li><a href="#" class="hover:text-[#FF6C29]">FAQ</a></li>
+                                                        <li><a href="#" class="hover:text-[#FF6C29]">Merch</a></li>
+                                                        <li><a href="#" class="hover:text-[#FF6C29]">Sign in</a></li>
+                                                </ul>
+
+                                                <button class="bg-[#FF6C29] text-black px-4 py-2 rounded-xl font-medium hover:opacity-90">
+                                                        RESERVE
+                                                </button>
+                                        </div>
+                                </div>
+
+                                <!-- MOBILE DROPDOWN -->
+                                <div id="mobile-menu" class="hidden md:hidden mt-6">
+
+                                        <ul class="flex flex-col gap-4 text-white">
+                                                <li><a href="#" class="hover:text-[#FF6C29]">Personnalisation</a></li>
+                                                <li><a href="#" class="hover:text-[#FF6C29]">Maker</a></li>
+                                                <li><a href="#" class="hover:text-[#FF6C29]">Charging</a></li>
+                                                <li><a href="#" class="hover:text-[#FF6C29]">FAQ</a></li>
+                                                <li><a href="#" class="hover:text-[#FF6C29]">Merch</a></li>
+                                                <li><a href="#" class="hover:text-[#FF6C29]">Sign in</a></li>
+                                        </ul>
+
+                                        <button class="mt-4 w-full bg-[#FF6C29] text-black px-4 py-2 rounded-xl font-medium hover:opacity-90">
+                                                RESERVE
+                                        </button>
+                                </div>
+
+                        </div>
+                </nav>
+
+        </header>
+
+        <main>
+                <section class="bg-[#262626] m-4 rounded-xl p-10 relative z-10">
+                        <h2 class="text-white text-6xl font-bold">
+                                THIS TRUCK CAN BE ANYTHING.
+                                <span class="text-[#7D7D7D]">EVEN AN SUV.</span>
+                        </h2>
+                </section>
+
+                <section class="-mt-24 relative z-20 border-bottom-white border-b pb-8 mx-6">
+
+                        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                <!-- Carousel wrapper -->
+                                <div class="relative h-56 rounded-base md:h-96">
+                                        <!-- Item 1 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <div class="flex items-center justify-center h-full">
+                                                        <img src="assets/img/v1.webp" class="max-h-full object-contain" alt="...">
+                                                </div>
+                                        </div>
+
+                                        <!-- Item 2 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <div class="flex items-center justify-center h-full">
+                                                        <img src="assets/img/v1.webp" class="max-h-full object-contain" alt="...">
+                                                </div>
+                                        </div>
+                                        <!-- Item 3 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <div class="flex items-center justify-center h-full">
+                                                        <img src="assets/img/v1.webp" class="max-h-full object-contain" alt="...">
+                                                </div>
+                                        </div>
+
+                                        <!-- Item 4 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <div class="flex items-center justify-center h-full">
+                                                        <img src="assets/img/v1.webp" class="max-h-full object-contain" alt="...">
+                                                </div>
+                                        </div>
+                                        <!-- Item 5 -->
+                                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                                <div class="flex items-center justify-center h-full">
+                                                        <img src="assets/img/v1.webp" class="max-h-full object-contain" alt="...">
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Slider indicators -->
+                                <div class="absolute z-30 flex -translate-x-1/2 bottom-0 left-1/2 gap-3">
+                                        <button type="button" class="w-3 h-3 rounded-full bg-[#FF6C29]/40 aria-[current=true]:bg-[#FF6C29]" aria-current="true" data-carousel-slide-to="0"></button>
+
+                                        <button type="button" class="w-3 h-3 rounded-full bg-[#FF6C29]/40 aria-[current=true]:bg-[#FF6C29]" aria-current="false" data-carousel-slide-to="1"></button>
+
+                                        <button type="button" class="w-3 h-3 rounded-full bg-[#FF6C29]/40 aria-[current=true]:bg-[#FF6C29]" aria-current="false" data-carousel-slide-to="2"></button>
+
+                                        <button type="button" class="w-3 h-3 rounded-full bg-[#FF6C29]/40 aria-[current=true]:bg-[#FF6C29]" aria-current="false" data-carousel-slide-to="3"></button>
+
+                                        <button type="button" class="w-3 h-3 rounded-full bg-[#FF6C29]/40 aria-[current=true]:bg-[#FF6C29]" aria-current="false" data-carousel-slide-to="4"></button>
+                                </div>
+
+                                <!-- Slider controls -->
+                                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7" />
+                                                </svg>
+                                                <span class="sr-only">Previous</span>
+                                        </span>
+                                </button>
+                                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+                                                </svg>
+                                                <span class="sr-only">Next</span>
+                                        </span>
+                                </button>
+                        </div>
+
+                </section>
+
+                <section>
+                        <h2 class="text-white text-3xl font-bold mt-8 mb-4 ml-6">THE BLANK SLATE</h2>
+                        <p class="text-white w-[25rem] ml-6">Roll up in a sleek, black fastback SUV with tinted windows. Perfect for celebs, secret agents, or keeping a low profile.</p>
+                        <button class="w-[14rem] ml-6 mt-8 border border-[#FF6C29] px-4 py-2 text-white flex items-center justify-around gap-2 hover:bg-[#FF6C29] hover:text-black transition">
+                                DESIGN YOURS
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#FF6C29]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                        </button>
+                </section>
+
+        </main>
+
+        <!-- ====== Footer Section Start -->
+        <footer class="relative z-10 pb-10 pt-20 mt-8 bg-[#262626] text-white :pb-20 border-t mx-6 lg:pt-[120px] dark:bg-dark">
+                <div class="container mx-auto">
+                        <div class="-mx-4 flex flex-wrap justify-content-center p-2">
+                                <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                                        <div class="mb-10 w-full">
+                                                <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                                                        Resources
+                                                </h4>
+                                                <ul class="space-y-3">
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        SaaS Development
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Our Products
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        User Flow
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        User Strategy
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                                        <div class="mb-10 w-full">
+                                                <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                                                        Company
+                                                </h4>
+                                                <ul class="space-y-3">
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        About TailGrids
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Contact & Support
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Success History
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Setting & Privacy
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                                        <div class="mb-10 w-full">
+                                                <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                                                        Quick Links
+                                                </h4>
+                                                <ul class="space-y-3">
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Premium Support
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Our Services
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Know Our Team
+                                                                </a>
+                                                        </li>
+                                                        <li>
+                                                                <a href="javascript:void(0)" class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                                                                        Download App
+                                                                </a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+                                        <div class="mb-10 w-[20rem]">
+                                                <h4 class="mb-9 text-lg font-semibold text-dark dark:text-white">
+                                                        Follow Us On
+                                                </h4>
+                                                <div class="mb-6 flex items-center">
+                                                        <a href="javascript:void(0)" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
+                                                                <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
+                                                                        <path d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
+                                                                </svg>
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
+                                                                <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                                                        <path d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
+                                                                </svg>
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
+                                                                <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                                                        <path d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
+                                                                </svg>
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4 dark:border-dark-3 dark:text-white dark:hover:border-primary">
+                                                                <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
+                                                                        <path d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
+                                                                </svg>
+                                                        </a>
+                                                </div>
+                                                <p class="text-base text-body-color dark:text-dark-6">
+                                                        &copy; 2025 TailGrids
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <h1 class="text-8xl md:text-7xl font-bold text-[#7D7D7D] tracking-[1rem] md:tracking-[8rem] text-center">SLATE</h1>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>

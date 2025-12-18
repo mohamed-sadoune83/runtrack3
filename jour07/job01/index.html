@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job01</title>
+        <!-- Lien vers Materialize CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+        <!-- HEADER + NAV -->
+        <header>
+                <nav class="blue darken-2">
+                        <div class="nav-wrapper container">
+                                <a href="index.html" class="brand-logo">Job01</a>
+                                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                        <li><a href="index.html">Accueil</a></li>
+                                        <li><a href="index.html">Inscription</a></li>
+                                        <li><a href="index.html">Connexion</a></li>
+                                        <li><a href="index.html">Rechercher</a></li>
+                                </ul>
+                        </div>
+                </nav>
+        </header>
+
+        <!-- SECTION FORMULAIRE -->
+        <main class="container">
+                <h2 class="center-align">Créer un compte</h2>
+                <form class="col s12 m8 offset-m2" action="#" method="post">
+                        <!-- Civilité (radio) -->
+                        <p>
+                                <label>
+                                        <input name="civilite" type="radio" value="monsieur" />
+                                        <span>Monsieur</span>
+                                </label>
+                                <label>
+                                        <input name="civilite" type="radio" value="madame" />
+                                        <span>Madame</span>
+                                </label>
+                        </p>
+
+                        <!-- Prénom, Nom, Adresse -->
+                        <div class="input-field">
+                                <input id="prenom" type="text" name="prenom" required>
+                                <label for="prenom">Prénom</label>
+                        </div>
+                        <div class="input-field">
+                                <input id="nom" type="text" name="nom" required>
+                                <label for="nom">Nom</label>
+                        </div>
+                        <div class="input-field">
+                                <input id="adresse" type="text" name="adresse" required>
+                                <label for="adresse">Adresse</label>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="input-field">
+                                <input id="email" type="email" name="email" required>
+                                <label for="email">Email</label>
+                        </div>
+
+                        <!-- Mot de passe -->
+                        <div class="input-field">
+                                <input id="password" type="password" name="password" required>
+                                <label for="password">Mot de passe</label>
+                        </div>
+                        <div class="input-field">
+                                <input id="confirm-password" type="password" name="confirm_password" required>
+                                <label for="confirm-password">Confirmer le mot de passe</label>
+                        </div>
+
+                        <!-- Passions (checkbox) -->
+                        <p>Choisissez vos passions :</p>
+                        <p>
+                                <label>
+                                        <input type="checkbox" name="passions" value="informatique" />
+                                        <span>Informatique</span>
+                                </label>
+                                <label>
+                                        <input type="checkbox" name="passions" value="voyages" />
+                                        <span>Voyages</span>
+                                </label>
+                                <label>
+                                        <input type="checkbox" name="passions" value="sport" />
+                                        <span>Sport</span>
+                                </label>
+                                <label>
+                                        <input type="checkbox" name="passions" value="lecture" />
+                                        <span>Lecture</span>
+                                </label>
+                        </p>
+
+                        <!-- Bouton -->
+                        <div class="center-align">
+                                <button class="btn blue darken-2 waves-effect waves-light" type="submit">Valider</button>
+                        </div>
+                </form>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="page-footer blue darken-2 mt-5">
+                <div class="container">
+                        <div class="row">
+                                <div class="col s12">
+                                        <ul class="center-align">
+                                                <li><a href="index.html" class="white-text">Accueil</a></li>
+                                                <li><a href="index.html" class="white-text">Inscription</a></li>
+                                                <li><a href="index.html" class="white-text">Connexion</a></li>
+                                                <li><a href="index.html" class="white-text">Rechercher</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+                <div class="footer-copyright">
+                        <div class="container center-align">
+                                © 2025 Job01
+                        </div>
+                </div>
+        </footer>
+
+        <!-- Script Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
